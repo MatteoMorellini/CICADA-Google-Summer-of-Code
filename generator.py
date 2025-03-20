@@ -25,6 +25,7 @@ class RegionETGenerator:
         drop_remainder: bool = False,
     ) -> data.Dataset:
         dataset = data.Dataset.from_tensor_slices((X, y))
+
         return (
             dataset.shuffle(210 * batch_size)
             .batch(batch_size, drop_remainder=drop_remainder)
