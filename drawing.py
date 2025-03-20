@@ -161,8 +161,6 @@ class Draw:
         ax3.get_xaxis().set_visible(False)
         ax3.get_yaxis().set_visible(False)
         ax3.set_title(rf"|$\Delta$|, MSE: {loss: .2f}", fontsize=18)
-        print(np.abs(deposits_in - deposits_out).shape)
-        print(np.abs(deposits_in - deposits_out).reshape(16, 16).shape)
         im = ax3.imshow(
             np.abs(deposits_in - deposits_out).reshape(16, 16),
             vmin=0,
