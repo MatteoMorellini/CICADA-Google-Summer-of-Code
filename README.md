@@ -7,9 +7,11 @@ Philip Harris, Maurizio Pierini, Isobel Ojalvo and Peter Elmer
 at the Large Hadron Collider*" Ekaterina Govorkova, Ema Puljak, Thea Aarrestad, Thomas James, Vladimir Loncar, Maurizio
 Pierini, Adrian Alan Pol, Nicol`o Ghielmetti, Maksymilian Graczyk and Sioni Summers
 - "*Automatic heterogeneous quantization of deep neural networks for low-latency inference on the edge for particle detectors*" Claudionor N. Coelho Jr., Aki Kuusela, Shan Li, Hao Zhuang, Thea Aarrestad, Vladimir Loncar, Maurizio Pierini, Adrian Alan Pol, Sioni SummersJennifer and Ngadiuba
+
 Also most of the assumptions that I've been able to make throughout this project wouldn't have been possible without the following presentation:
 - "*CICADA: Anomaly Detection for New Physics
 Searches at the CMS Level-1 Trigger*" Ho Fung Tsoi
+
 Indeed the shape of each slice, 16x16, is extremely similar to the (18,14) handled by CICADA in their code. It follows that my philosophy, while writing this notebook, has been to simulate the same difficulties too in order to create a (simplified) version that could run in the L1 trigger at LHC:
 - extreme low latency
 - extremely tight resources from a single FPGA board
